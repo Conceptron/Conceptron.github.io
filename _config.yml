@@ -1,0 +1,53 @@
+title: Kritin Sathi
+tagline: Measured notes on agents, tooling, and things I got wrong
+description: >-
+  Engineering writing by Kritin Sathi. Measurement methodology for AI agent
+  tooling, macOS internals, and command-line debugging — with the retractions
+  left in.
+url: "https://kritinsathi.com"
+baseurl: ""
+
+author:
+  name: Kritin Sathi
+  email: kritinsai1@gmail.com
+
+# Used by jekyll-seo-tag for JSON-LD + Twitter/OG cards
+logo: /assets/avatar.png
+social:
+  name: Kritin Sathi
+  links:
+    - https://github.com/Conceptron
+
+github_username: Conceptron
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+permalink: /:title/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  path: /feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
+  - .jekyll-cache

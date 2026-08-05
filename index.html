@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<section class="intro">
+  <p>{{ site.tagline }}</p>
+</section>
+
+<ul class="post-list">
+  {%- for post in site.posts -%}
+  <li>
+    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {%- if post.description -%}<p>{{ post.description }}</p>{%- endif -%}
+  </li>
+  {%- endfor -%}
+</ul>
+
+{%- if site.posts.size == 0 -%}
+<p class="empty">Nothing published yet.</p>
+{%- endif -%}
