@@ -22,7 +22,7 @@ built for my own use, so the sample sizes are what they are and I say so.
 wrong on the way to the result — usually a mechanism I invented to explain two
 observations that were both real. Those sections are the point, not an apology.
 
-Corrections are welcome and I'll credit them.
+[Corrections](https://github.com/Conceptron/Conceptron.github.io/issues) are welcome and I'll credit them.
 
-- [GitHub](https://github.com/Conceptron)
+- [GitHub](https://github.com/Conceptron){: rel="me"}
 - [RSS]({{ '/feed.xml' | relative_url }})

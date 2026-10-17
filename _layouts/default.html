@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <link rel="me" href="https://github.com/{{ site.github_username }}">
   {%- seo -%}
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
@@ -25,7 +27,7 @@
   <footer class="site-footer">
     <p>
       &copy; {{ 'now' | date: "%Y" }} {{ site.author.name }} ·
-      <a href="https://github.com/{{ site.github_username }}">GitHub</a> ·
+      <a rel="me" href="https://github.com/{{ site.github_username }}">GitHub</a> ·
       <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
     </p>
     <p class="disclaimer">Personal writing. Views are my own and not those of any employer.</p>

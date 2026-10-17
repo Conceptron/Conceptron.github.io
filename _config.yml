@@ -11,8 +11,8 @@ author:
   name: Kritin Sathi
   email: kritinsai1@gmail.com
 
-# Used by jekyll-seo-tag for JSON-LD + Twitter/OG cards
-logo: /assets/avatar.png
+# Used by jekyll-seo-tag for JSON-LD + Twitter/OG cards.
+# No `logo:` on purpose: it pointed at an avatar that never existed (404 in the JSON-LD).
 social:
   name: Kritin Sathi
   links:
@@ -39,6 +39,11 @@ feed:
   path: /feed.xml
 
 defaults:
+  - scope:
+      path: ""
+    values:
+      # Default share card. A post can override it with its own `image:`.
+      image: /assets/og.png
   - scope:
       path: ""
       type: posts

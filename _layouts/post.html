@@ -8,6 +8,8 @@ layout: default
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">
         {{ page.date | date: "%B %-d, %Y" }}
       </time>
+      {%- assign words = content | number_of_words -%}
+      · {{ words | divided_by: 230 | plus: 1 }} min read
       {%- if page.tags and page.tags.size > 0 -%}
         <span class="tags">
           {%- for tag in page.tags %} <span class="tag">{{ tag }}</span>{% endfor -%}
@@ -22,6 +24,10 @@ layout: default
   <div class="post-content e-content">
     {{ content }}
   </div>
+
+  <aside class="corrections">
+    <p>Spotted an error? <a href="https://github.com/{{ site.github_username }}/{{ site.github_username }}.github.io/issues/new?title={{ 'Correction: ' | append: page.title | url_encode }}">Open an issue</a> — corrections get credited.</p>
+  </aside>
 
   {%- if page.syndicated -%}
   <aside class="syndication">
