@@ -3,6 +3,8 @@ layout: default
 title: About
 description: Kritin Sathi — software engineer in San Francisco writing about agent tooling, measurement, and macOS internals.
 permalink: /about/
+seo:
+  type: Person
 ---
 
 # About
@@ -25,4 +27,5 @@ observations that were both real. Those sections are the point, not an apology.
 [Corrections](https://github.com/Conceptron/Conceptron.github.io/issues) are welcome and I'll credit them.
 
 - [GitHub](https://github.com/Conceptron){: rel="me"}
+- [LinkedIn](https://www.linkedin.com/in/kritin-sathi-b3a3a9100){: rel="me"}
 - [RSS]({{ '/feed.xml' | relative_url }})
