@@ -2,22 +2,48 @@
 layout: default
 ---
 
-<section class="intro">
-  <p>{{ site.tagline }}</p>
+<section class="love">
+  <p class="love-mark" aria-hidden="true">&#10084;&#65039;&#8734;&#65039;</p>
+  <h1 class="love-title">Love is the truth.</h1>
+
+  <p class="love-lede">
+    The more I live, the more true this feels. When I listen to understand,
+    people open up. When I'm honest and kind together, trust grows. When I act
+    from love, things that looked stuck start to move.
+  </p>
+
+  <ol class="love-ways">
+    <li><span>Listen</span> to understand.</li>
+    <li><span>Be honest and kind</span> together.</li>
+    <li><span>Act</span> from love.</li>
+  </ol>
+
+  <figure class="love-quote">
+    <blockquote>
+      <p>Love as thought is Truth.<br>
+      Love as action is Right living.<br>
+      Love as feeling is Peace.<br>
+      Love as understanding is Non-violence.</p>
+    </blockquote>
+    <figcaption>&mdash; Sathya Sai Baba, <a href="https://saispeaks.sathyasai.org/discourse/love-key"><cite>Love is the key</cite></a></figcaption>
+  </figure>
+
+  <p class="love-ask">Share it with someone you love today &#10084;&#65039;</p>
 </section>
 
-<ul class="post-list">
-  {%- for post in site.posts -%}
-  <li>
-    <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
-    {%- assign words = post.content | number_of_words %}
-    <span class="read-time">· {{ words | divided_by: 230 | plus: 1 }} min read</span>
-    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-    {%- if post.description -%}<p>{{ post.description }}</p>{%- endif -%}
-  </li>
-  {%- endfor -%}
-</ul>
-
-{%- if site.posts.size == 0 -%}
-<p class="empty">Nothing published yet.</p>
+{%- if site.posts.size > 0 -%}
+<section class="writing">
+  <h2>Writing</h2>
+  <ul class="post-list">
+    {%- for post in site.posts -%}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+      {%- assign words = post.content | number_of_words %}
+      <span class="read-time">· {{ words | divided_by: 230 | plus: 1 }} min read</span>
+      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+      {%- if post.description -%}<p>{{ post.description }}</p>{%- endif -%}
+    </li>
+    {%- endfor -%}
+  </ul>
+</section>
 {%- endif -%}

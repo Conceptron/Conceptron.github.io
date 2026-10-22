@@ -152,3 +152,37 @@ pre code { background: none; padding: 0; }
 }
 .site-footer p { margin: 0.3rem 0; }
 .disclaimer { opacity: 0.75; }
+
+/* ---- love is the truth (home) ---- */
+:root { --love: #c2185b; }
+@media (prefers-color-scheme: dark) { :root { --love: #f48fb1; } }
+
+.love { text-align: center; padding: 3.5rem 0 1rem; }
+.love-mark { font-size: 2rem; margin: 0 0 0.5rem; letter-spacing: 0.2em; }
+.love-title {
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-weight: 600;
+  font-size: clamp(2.6rem, 11vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.75rem;
+  color: var(--love);
+}
+.love-lede { font-size: 1.15rem; line-height: 1.7; margin: 0 auto 2.25rem; max-width: 34rem; }
+.love-ways { list-style: none; padding: 0; margin: 0 0 2.75rem; font-size: 1.2rem; }
+.love-ways li { padding: 0.55rem 0; border-top: 1px solid var(--rule); }
+.love-ways li:last-child { border-bottom: 1px solid var(--rule); }
+.love-ways span { font-weight: 650; color: var(--love); }
+.love-quote { margin: 0 auto 2.5rem; max-width: 30rem; }
+.love-quote blockquote {
+  margin: 0;
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+.love-quote blockquote p { margin: 0 0 0.6rem; }
+.love-quote figcaption { color: var(--muted); font-size: 0.9rem; }
+.love-ask { font-size: 1.1rem; color: var(--muted); margin: 0; }
+.writing { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+.writing > h2 { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 0 0 1.5rem; }
