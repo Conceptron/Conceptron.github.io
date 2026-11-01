@@ -1,8 +1,7 @@
 title: Kritin Sathi
-tagline: Love is the truth
+tagline: Software engineer in San Francisco
 description: >-
-  Love is the truth. Listen to understand, be honest and kind together, and
-  act from love.
+  Kritin Sathi, a software engineer in San Francisco.
 url: "https://kritinsathi.com"
 baseurl: ""
 
@@ -39,11 +38,9 @@ feed:
   path: /feed.xml
 
 defaults:
-  - scope:
-      path: ""
-    values:
-      # Default share card. A post can override it with its own `image:`.
-      image: /assets/og.png
+  # No default share card: assets/og.png still carries the retired
+  # "Love is the truth" art (Nov 1 2026). Re-add once a generic card is
+  # rendered from writing/og_generic.svg. A post can set its own `image:`.
   - scope:
       path: ""
       type: posts
